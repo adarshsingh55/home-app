@@ -1,0 +1,14 @@
+.container{
+    width: 90vw;
+    margin-top: 20px;
+}  
+.InputBox{
+    height: 40vh;
+    width: 80vw;
+    border: 2px solid rgb(19, 168, 19);
+    background-color: #14252E;
+    color: rgb(19, 168, 19) ;
+    font-size: 21px;
+    display: flex;
+    overflow-wrap: break-word;
+}
