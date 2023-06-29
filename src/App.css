@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 .App {
+  background-image: linear-gradient( rgb(20 37 46),#62e2ff,rgb(20 37 46));
   text-align: center;
   display: flex;
   align-items: center;
