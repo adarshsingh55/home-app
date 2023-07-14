@@ -2,7 +2,7 @@
     margin-top: 20px;
     /* box-shadow: 5px 5px 5px red; */
     border: 1px solid rgb(19, 168, 19);
-    text-shadow: 0 0 10px rgb(242 8 215), 0 0 10px rgb(242 8 215);
+    text-shadow: 0 0 4px rgb(242 8 215), 0 0 4px rgb(242 8 215);
     color: rgb(242 8 215);
     display: flex;
     flex-direction: column;
@@ -10,6 +10,8 @@
     text-align: left;
     font-family: 'Share Tech Mono', monospace;
     width: 80vw;
+    /* -webkit-backdrop-filter: blur(3px); */
+    backdrop-filter: blur(3px);
     /* height: 40vh; */
     box-shadow: 3px 3px 23px rgb(12 67 100);
     border-radius: 20px;
@@ -20,9 +22,32 @@
     background-color: #14252E;
     color: rgb(242 8 215);
     font-size: 27px;
-  
     overflow-wrap: break-word;
     border: 1px solid rgb(19, 168, 19);
     background-color: #14252e00;
    
+}
+
+.AddNoteBtn{
+    padding: 6px;
+    color: #353535;
+    border-radius: 18px;
+    background-color: rgb(242 8 215);
+}
+.UlNote{
+    list-style: none;
+    width: 95%;
+    font-size: 21px;
+}
+
+.TextInput{
+    font-size: 16px;
+    padding: 5px;
+    margin: 8px;
+    width: 210px;
+    border-radius: 4px;
+}
+.TextInput :hover{
+    border: none;
+    box-shadow: inset 0px 0px 28px #62e2ff;
 }

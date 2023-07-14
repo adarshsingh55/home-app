@@ -23,7 +23,7 @@ function NoteGallery() {
     e.preventDefault();
     if (inputValue.trim() !== '') {
       const newTask = { task: inputValue, checked: false };
-      setTasks([...tasks, newTask]);
+      setTasks([newTask,...tasks]);
       setInputValue('');
       updateLocalStorage([...tasks, newTask]);
     }
@@ -44,6 +44,7 @@ function NoteGallery() {
 
   const updateLocalStorage = (updatedTasks) => {
     localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+    console.log(tasks);
   };
 
   return (
@@ -51,11 +52,11 @@ function NoteGallery() {
     <h1>Checklist</h1>
     <div>
       <form  onSubmit={ handleAddTask}>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
-      <button type="submit">Add</button>
+      <input type="text" className={style.TextInput} value={inputValue} onChange={handleInputChange} />
+      <button className={style.AddNoteBtn} type="submit" >Add</button>
       </form>
     </div>
-      <ul>
+      <ul className={style.UlNote}>
         {tasks.map((task, index) => (
           <li key={index}>
             <input

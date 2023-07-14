@@ -1,0 +1,32 @@
+.SideNavContainer{
+    position: fixed;
+    bottom: 105px;
+    right: 0px;
+    z-index: 3;
+    /* background-color: greenyellow; */
+}
+/* .Triangle{
+    border-bottom: 100px solid #32557f;
+    border-left: 100px solid transparent;
+} */
+.SideNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 300px; */
+    width: 90px; 
+    padding-bottom: 35px;
+
+    border: 4px solid #62e2ff;
+    border-top-left-radius: 25px;
+    box-shadow: inset 0px 0px 28px #62e2ff;
+}
+.ImgBox{
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+.ImgBox :hover{
+    /* background-color: #4dea0b; */
+    box-shadow: inset 0px 0px 28px #62e2ff;
+}
