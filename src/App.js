@@ -1,19 +1,18 @@
-// import logo from './logo.svg';
+
 import "./App.css";
-import BottomNav from "./component/BottomNav/BottomNav";
-// import Clock from "./component/Clock/Clock";
-import ImgGallery from "./component/ImgGallery/ImgGallery";
-import SideNav from "./component/SideNav/SideNav";
-import NoteGallery from "./component/noteGallery/NoteGallery";
+import ConnectWallet from "./component/ConnectWallet/ConnectWallet";
+import TopNavbar from "./component/TopNavbar/TopNavbar";
+import TaskeState from "./context/Task/TaskeState";
+
 
 function App() {
   return (
     <div className="App">
-      <SideNav />
-      <BottomNav/>
-      <ImgGallery />
-      <NoteGallery />
-      {/* <Clock/> */}
+      <TaskeState>
+
+   <TopNavbar/>
+   {/* <ConnectWallet/> */}
+      </TaskeState>
     </div>
   );
 }
